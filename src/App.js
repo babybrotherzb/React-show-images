@@ -26,30 +26,51 @@ export default class App extends Component {
   toggleshow = () => {
     this.setState({ showimgs: false });
   };
-  
+
   render() {
     const { firstIndex, showimgs, data } = this.state;
     return (
-      <div className="custcontent">
-        <div className="showimg">
-          {this.state.data.map((item, i) => {
-            return (
-              <img
-                style={{ width: "200px", height: "100px" }}
-                src={item}
-                onClick={() => this.showimg(i)}
-                key={item}
-              />
-            );
-          })}
+      <React.Fragment>
+      {/**此处无关紧要 */}
+        <div className="title">
+          baby张的react+css3图片预览demo,缩放，旋转，切换
+          <p>Github地址：
+            <a href="https://github.com/babybrotherzb" target="_blank">
+              https://github.com/babybrotherzb
+            </a>
+          </p>
+          <p>博客地址：
+            <a
+              href="https://blog.csdn.net/weixin_43648947/article/list/1?"
+              target="_blank"
+            >
+              https://blog.csdn.net/weixin_43648947/article/list/1?
+            </a>
+          </p>
         </div>
-        <ShowImg
-          data={data}
-          firstIndex={firstIndex}
-          showimgs={showimgs}
-          toggleshow={this.toggleshow}
-        ></ShowImg>
-      </div>
+        <div className="custcontent">
+          {/*图片正常的列表显示 */}
+          <div className="showimg">
+            {this.state.data.map((item, i) => {
+              return (
+                <img
+                  style={{ width: "200px", height: "100px" }}
+                  src={item}
+                  onClick={() => this.showimg(i)}
+                  key={item}
+                />
+              );
+            })}
+          </div>
+          {/* 引入的image组件 */}
+          <ShowImg
+            data={data}
+            firstIndex={firstIndex}
+            showimgs={showimgs}
+            toggleshow={this.toggleshow}
+          ></ShowImg>
+        </div>
+      </React.Fragment>
     );
   }
 }
