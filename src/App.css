@@ -1,22 +1,104 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'icon';  /* project id 942104 */
+  src: url('//at.alicdn.com/t/font_942104_lhzztf6om6j.eot');
+  src: url('//at.alicdn.com/t/font_942104_lhzztf6om6j.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_942104_lhzztf6om6j.woff') format('woff'),
+  url('//at.alicdn.com/t/font_942104_lhzztf6om6j.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_942104_lhzztf6om6j.svg#iconfont') format('svg');
 }
-
-.App-logo {
-  height: 40vmin;
+.icon {
+  font-family:"icon" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+.icon-close:before { content: "\eaf2"; }
+.icon-left:before { content: "\e77f"; }
+.icon-right:before { content: "\e783"; }
+.icon-lturn:before { content: "\e787"; }
+.icon-rturn:before { content: "\e788"; }
+.icon-imgbig:before { content: "\e781"; }
+.icon-imgmin:before { content: "\e780"; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dilong{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #000;
+  opacity: 0.4;
+  z-index: 2
 }
-
-.App-link {
-  color: #09d3ac;
+.bigimg{
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 850px;
+  height: 650px;
+  background: #fff;
+  z-index: 3
+}
+.bigimg p i{
+  cursor: pointer
+}
+.close{
+  position:absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 66;
+}
+.left{
+  position: absolute;
+  top: 50%;
+  left:5%;
+  transform: translate(-50% ,-50%);
+  z-index: 66;
+}
+.right{
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50% ,-50%);
+  z-index: 66;
+}
+.rotateright{
+  position: absolute;
+  top: 95%;
+  left: 45%;
+  transform: translate(-50% ,-50%);
+  z-index: 66;
+}
+.rotateleft{
+  position: absolute;
+  top: 95%;
+  left: 35%;
+  transform: translate(-50% ,-50%);
+  z-index: 66;
+}
+.showbig{
+  position: absolute;
+  top: 95%;
+  left: 55%;
+  transform: translate(-50% ,-50%);
+  z-index: 66;
+}
+.showmin{
+  position: absolute;
+  top: 95%;
+  left: 65%;
+  transform: translate(-50% ,-50%);
+  z-index: 66;
+}
+.imgstyle{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%) rotate(0deg) scale(1,1);
+  z-index: 6
 }
