@@ -4,6 +4,7 @@
   "private": true,
   "author": "@baby张 <babybrotherzb@gmail.com>",
   "address": "https://github.com/babybrotherzb",
+  "csdn":"https://blog.csdn.net/weixin_43648947",
   "dependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
