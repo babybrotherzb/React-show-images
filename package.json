@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "@baby张 <babybrotherzb@gmail.com>",
-  "address":"https://github.com/babybrotherzb",
+  "address": "https://github.com/babybrotherzb",
   "dependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1",

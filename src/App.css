@@ -21,6 +21,19 @@
 .icon-imgbig:before { content: "\e781"; }
 .icon-imgmin:before { content: "\e780"; }
 
+.title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.custcontent{
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+
 .dilong{
   position: absolute;
   top: 0px;
