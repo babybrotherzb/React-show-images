@@ -2,16 +2,15 @@
   "name": "react-image",
   "version": "0.1.0",
   "private": true,
+  "author": "@baby张 <babybrotherzb@gmail.com>",
+  "address":"https://github.com/babybrotherzb",
   "dependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-scripts": "3.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
