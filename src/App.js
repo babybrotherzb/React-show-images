@@ -41,10 +41,10 @@ export default class App extends Component {
           </p>
           <p>博客地址：
             <a
-              href="https://blog.csdn.net/weixin_43648947/article/list/1?"
+              href="https://blog.csdn.net/weixin_43648947"
               target="_blank"
             >
-              https://blog.csdn.net/weixin_43648947/article/list/1?
+            https://blog.csdn.net/weixin_43648947
             </a>
           </p>
         </div>
